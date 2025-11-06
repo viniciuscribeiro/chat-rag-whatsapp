@@ -1,6 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
-import { OpenRouterEmbeddings } from '@langchainjs/openrouter';
-import { OpenRouter } from '@langchainjs/openrouter';
+import { OpenRouterEmbeddings } from "langchain/embeddings/openrouter";
+import { OpenRouter } from "langchain/chat_models/openrouter";
 import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
 import { StringOutputParser } from '@langchain/core/output_parsers';
 import {
