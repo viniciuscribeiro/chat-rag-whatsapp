@@ -4,8 +4,8 @@ import { formidable } from 'formidable';
 import fs from 'fs';
 import pdf from 'pdf-parse';
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
-import { OpenRouterEmbeddings } from "langchain/embeddings/openrouter";
-import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
+import { OpenRouterEmbeddings } from "@langchain/community/embeddings/openrouter";
+import { SupabaseVectorStore } from "@langchain/community/vectorstores/supabase";
 
 // Carrega as variáveis de ambiente do Vercel
 // (Estas SÃO as chaves SECRETAS, configuradas no painel da Vercel)

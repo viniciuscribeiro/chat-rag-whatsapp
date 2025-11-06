@@ -1,14 +1,14 @@
 import { createClient } from '@supabase/supabase-js';
-import { OpenRouterEmbeddings } from "langchain/embeddings/openrouter";
-import { OpenRouter } from "langchain/chat_models/openrouter";
-import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
-import { StringOutputParser } from '@langchain/core/output_parsers';
+import { SupabaseVectorStore } from "@langchain/community/vectorstores/supabase";
+import { OpenRouterEmbeddings } from "@langchain/community/embeddings/openrouter";
+import { OpenRouter } from "@langchain/community/chat_models/openrouter";
+import { StringOutputParser } from "@langchain/core/output_parsers";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   SystemMessagePromptTemplate,
-} from '@langchain/core/prompts';
-import { RunnableSequence } from '@langchain/core/runnables';
+} from "@langchain/core/prompts";
+import { RunnableSequence } from "@langchain/core/runnables";
 
 // Carrega as variáveis de ambiente do Vercel (chaves secretas)
 const supabaseUrl = process.env.SUPABASE_URL || '';
