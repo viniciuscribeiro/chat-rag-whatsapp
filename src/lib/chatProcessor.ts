@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 import { SupabaseVectorStore } from "@langchain/community/vectorstores/supabase";
-import { OpenRouterEmbeddings } from "@langchain/community/embeddings/openrouter";
-import { OpenRouter } from "@langchain/community/chat_models/openrouter";
+import { OpenRouterEmbeddings } from "langchain/embeddings/openrouter";
+import { OpenRouter } from "langchain/chat_models/openrouter";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import {
   ChatPromptTemplate,
