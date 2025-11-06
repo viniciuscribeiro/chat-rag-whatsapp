@@ -1,21 +1,22 @@
 import { ConfigPanel } from './components/ConfigPanel';
 import { RAGManager } from './components/RAGManager';
+import { TestChat } from './components/TestChat'; // Importar
 
 function App() {
-  return (
-    <div>
-      <ConfigPanel />
-      
-      <hr style={{ 
-        maxWidth: '800px', 
-        margin: '30px auto', 
-        border: 'none', 
-        borderTop: '2px solid #eee' 
-      }} />
-      
-      <RAGManager />
+  const divider = <hr style={{ 
+    maxWidth: '800px', 
+    margin: '30px auto', 
+    border: 'none', 
+    borderTop: '2px solid #eee' 
+  }} />;
 
-      {/* Mais tarde, adicionaremos o Chat de Teste aqui */}
+  return (
+    <div style={{ paddingBottom: '50px' }}>
+      <ConfigPanel />
+      {divider}
+      <RAGManager />
+      {divider}
+      <TestChat /> {/* Adicionado */}
     </div>
   );
 }
