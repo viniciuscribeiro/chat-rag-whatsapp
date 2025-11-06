@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { processMessage } from '../lib/chatProcessor'; // Importa o cérebro
+import { processMessage } from '../../src/lib/chatProcessor';
 import axios from 'axios';
 
 // --- Credenciais da Evolution API (Fornecidas no prompt) ---

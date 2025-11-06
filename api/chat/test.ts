@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { processMessage } from '../lib/chatProcessor'; // Importa o cérebro
+import { processMessage } from '../../src/lib/chatProcessor';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   // CORS
