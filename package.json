@@ -12,6 +12,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.79.0",
     "@vercel/node": "^5.5.4",
+    "axios": "^1.13.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
