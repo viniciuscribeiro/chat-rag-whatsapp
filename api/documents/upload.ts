@@ -4,7 +4,7 @@ import { formidable } from 'formidable';
 import fs from 'fs';
 import pdf from 'pdf-parse';
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
-import { OpenRouterEmbeddings } from '@langchain/openrouter';
+import { OpenRouterEmbeddings } from '@langchainjs/openrouter';
 import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
 
 // Carrega as variáveis de ambiente do Vercel
